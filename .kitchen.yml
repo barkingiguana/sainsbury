@@ -5,6 +5,7 @@ driver:
 provisioner:
   name: chef_zero
   require_chef_omnibus: 12.6.0
+  cookbook_path: berks-cookbooks/
 
 platforms:
   - name: ubuntu-15.04
