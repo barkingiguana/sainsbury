@@ -17,4 +17,5 @@ suites:
   - name: web
     run_list:
       - recipe[nginx::default]
+      - recipe[sainsburys::web]
     attributes:

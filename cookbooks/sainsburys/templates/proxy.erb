@@ -1,0 +1,12 @@
+upstream sainsburys {
+  server 10.11.12.101;
+  server 10.11.12.102;
+}
+
+server {
+  listen 80;
+
+  location / {
+    proxy_pass http://sainsburys;
+  }
+}

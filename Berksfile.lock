@@ -1,5 +1,7 @@
 DEPENDENCIES
   nginx (~> 2.6)
+  sainsburys
+    path: cookbooks/sainsburys
 
 GRAPH
   apt (2.9.2)
@@ -18,6 +20,7 @@ GRAPH
   rsyslog (2.2.0)
   runit (1.7.6)
     packagecloud (>= 0.0.0)
+  sainsburys (0.1.0)
   yum (3.8.2)
   yum-epel (0.6.5)
     yum (~> 3.2)
