@@ -10,11 +10,14 @@ Vagrant.configure(2) do |config|
 
   2.times do |n|
     app_box_name = 'app%0.2d' % (n + 1)
+    ip = 101 + n
     config.vm.define app_box_name do |app|
+      app.vm.network :private_network, ip: "10.11.12.#{ip}"
     end
   end
 
   config.vm.define "web" do |web|
+    web.vm.network :private_network, ip: "10.11.12.10"
   end
 
   # Enable provisioning with a shell script. Additional provisioners such as
