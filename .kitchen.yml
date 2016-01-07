@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-15.04
+
+suites:
+  - name: app
+    run_list:
+    attributes:
+  - name: web
+    run_list:
+    attributes:
