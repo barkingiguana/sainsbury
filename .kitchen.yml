@@ -16,4 +16,5 @@ suites:
     attributes:
   - name: web
     run_list:
+      - recipe[nginx::default]
     attributes:
