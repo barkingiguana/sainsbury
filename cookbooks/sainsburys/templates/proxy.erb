@@ -1,6 +1,7 @@
 upstream sainsburys {
-  server 10.11.12.101;
-  server 10.11.12.102;
+  <% @app_nodes.each do |app_node| -%>
+    server <%= app_node['ipaddress'] %>;
+  <% end -%>
 }
 
 server {

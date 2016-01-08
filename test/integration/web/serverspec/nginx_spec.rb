@@ -10,4 +10,8 @@ describe "Nginx" do
   it "has a running service of nginx" do
     expect(service("nginx")).to be_running
   end
+
+  it "defines the app nodes as servers in the sainsburys upstream" do
+    expect(file('/etc/nginx/sites-enabled/proxy')).to contain('server 10.0.0.75').from(/^upstream sainsburys {$/).to(/^}$/)
+  end
 end
