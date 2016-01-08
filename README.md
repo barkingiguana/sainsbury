@@ -5,7 +5,7 @@ DevOps test for Sainsburys.
 ## Running the solution
 
 ```bash
-vagrant up && curl http://127.0.0.1:8282/ && curl http://127.0.0.1:8282/
+berks vendor && vagrant up && curl http://127.0.0.1:8282/ && curl http://127.0.0.1:8282/
 ```
 
 ## Notes
