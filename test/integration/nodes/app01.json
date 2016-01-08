@@ -2,7 +2,17 @@
   "id": "app01",
   "run_list": ["role[app]"],
   "automatic": {
-    "ipaddress": "10.0.0.75",
+    "network": {
+      "interfaces": {
+        "eth1": {
+          "addresses": {
+            "10.0.0.75": {
+              "family": "inet"
+            }
+          }
+        }
+      }
+    },
     "roles": ["app"]
   }
 }

@@ -18,6 +18,7 @@ bash "compile the Sainsburys application backend" do
     /usr/local/go/bin/go build sainsburys.go
     mv /usr/src/app/sainsburys /usr/local/bin/sainsburys
   EOF
+  creates "/usr/local/bin/sainsburys"
 end
 
 # FIXME: I'd normally want to use runit - or at least upstart - here. Again,
