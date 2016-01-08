@@ -11,7 +11,7 @@ I assume that you've got a recent Chef Development Kit and VirtualBox install.
 ## Running the solution
 
 ```bash
-berks vendor && vagrant up && curl http://127.0.0.1:8282/ && curl http://127.0.0.1:8282/
+./doit.sh
 ```
 
 ## Testing
