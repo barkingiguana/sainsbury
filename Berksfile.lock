@@ -1,4 +1,5 @@
 DEPENDENCIES
+  golang (~> 1.7)
   nginx (~> 2.6)
   sainsburys
     path: cookbooks/sainsburys
@@ -8,6 +9,7 @@ GRAPH
   bluepill (2.4.1)
     rsyslog (~> 2.0)
   build-essential (2.2.4)
+  golang (1.7.0)
   nginx (2.7.6)
     apt (~> 2.2)
     bluepill (~> 2.3)
