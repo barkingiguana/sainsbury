@@ -26,6 +26,9 @@ kitchen test
 
 ## Notes
 
+My next step from where the test is, would be to rescrict the app nodes so
+they only accept HTTP connections from the web node.
+
 I'd prefer to use Docker and some sort of gossip based network discovery so
 that if an app node is added or removed the load balanced pool is very
 quickly updated, but that is beyond the scope of this exercise.
