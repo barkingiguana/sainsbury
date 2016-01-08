@@ -26,7 +26,7 @@ kitchen test
 
 ## Notes
 
-My next step from where the test is, would be to rescrict the app nodes so
+My next step from where the test is, would be to restrict the app nodes so
 they only accept HTTP connections from the web node.
 
 I'd prefer to use Docker and some sort of gossip based network discovery so
