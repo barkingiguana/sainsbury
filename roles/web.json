@@ -3,7 +3,9 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
-
+    "nginx": {
+      "default_site_enabled":  false
+    }
   },
   "override_attributes": {
 
