@@ -1,6 +1,6 @@
 name             'sainsburys'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Craig Webster'
+maintainer_email 'craig@barkingiguana.cim'
 license          'All rights reserved'
 description      'Installs/Configures sainsburys'
 long_description 'Installs/Configures sainsburys'
