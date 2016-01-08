@@ -12,6 +12,6 @@ describe "Nginx" do
   end
 
   it "defines the app nodes as servers in the sainsburys upstream" do
-    expect(file('/etc/nginx/sites-enabled/proxy')).to contain('server 10.0.0.75').from(/^upstream sainsburys {$/).to(/^}$/)
+    expect(file('/etc/nginx/sites-enabled/proxy')).to contain('server 10.0.0.75:8484').from(/^upstream sainsburys {$/).to(/^}$/)
   end
 end

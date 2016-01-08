@@ -13,6 +13,8 @@ platforms:
 suites:
   - name: app
     run_list:
+      - recipe[golang::default]
+      - recipe[sainsburys::app]
     attributes:
   - name: web
     run_list:

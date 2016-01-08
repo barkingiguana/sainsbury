@@ -1,6 +1,6 @@
 upstream sainsburys {
   <% @app_nodes.each do |app_node| -%>
-    server <%= app_node['ipaddress'] %>;
+    server <%= app_node['ipaddress'] %>:8484;
   <% end -%>
 }
 
