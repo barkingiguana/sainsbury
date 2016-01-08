@@ -16,7 +16,7 @@ end
 
 Vagrant.configure(2) do |config|
   config.vm.box = 'bento/ubuntu-15.04'
-  config.berkshelf.enabled = false
+  config.berkshelf.enabled = false if config.respond_to? :berkshelf
 
   2.times do |n|
     app_box_name = 'app%0.2d' % (n + 1)
